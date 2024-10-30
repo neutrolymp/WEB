@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutrolymp</title>
+    <style>
+        /* Basic styling */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: #fff; padding: 15px; text-align: center; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        .container { padding: 20px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+
+        /* Sections styling */
+        .downloads, .contact { margin-top: 30px; }
+        .downloads h2, .contact h2 { color: #333; }
+        
+        /* Social media links */
+        .social-media a { margin: 0 10px; color: #333; text-decoration: none; }
+
+        /* Contact form styling */
+        .contact form { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .contact form input, .contact form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .contact form input[type="submit"] { background-color: #333; color: #fff; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Neutrolymp</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="downloads.html">Downloads</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Neutrolymp! Here, you can explore and download our latest files and resources. Follow us on social media for updates!</p>
+        </section>
+
+        <section class="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="mailto:neutrolympofficial@gmail.com" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="attachment">Attach an Image:</label>
+                <input type="file" id="attachment" name="attachment" accept="image/*">
+
+                <input type="submit" value="Send Inquiry">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Neutrolymp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
